@@ -31,18 +31,18 @@
                     </div>
                     <!--Login form -->
                     <form id="login" class="input-group-login" onsubmit="login()" method="get" name="loginForm">
-                        <input type="text" id="Login-UserName" class="input-field" placeholder="User Name" required name="username">
-                        <input type="password" class="input-field" placeholder="Password" required name="password">
-                        <input type="checkbox" class="check-box"><span>Remember Password</span>
-                        <button type="submit" class="submit-btn">Log In</button>
+                        <input type="text" id="Login-UserName"  class="input-field" placeholder="User Name" required name="username">
+                        <input type="password"  class="input-field" placeholder="Password" required name="password">
+                        <input type="checkbox"  class="check-box"><span>Remember Password</span>
+                        <button type="submit"  class="submit-btn">Log In</button>
                     </form>
                     <!--Registration form-->
                     <form id="register" class="input-group-register" method="get" onsubmit="signUp()" name="signupForm">
-                        <input type="text" id="fName" class="input-field" placeholder="Full Name" required name="fname">
-                        <input type="text" id="lName" class="input-field" placeholder="Email" required name="email">
-                        <input type="text" id="uName" class="input-field" placeholder="User Name" required name="username">
-                        <input type="password" id="Password" class="input-field" placeholder="Enter Password" required name="password">
-                        <input type="password" id="cPassword" class="input-field" placeholder="Confirm Password" required name="cpassword">
+                        <input type="text"  id="fName"  class="input-field" placeholder="Full Name"  required name="fname">
+                        <input type="text"  id="lName"  class="input-field" placeholder="Email"  required name="email">
+                        <input type="text"  id="uName"  class="input-field" placeholder="User Name"  required name="username">
+                        <input type="password"  id="Password"  class="input-field" placeholder="Enter Password"  required name="password">
+                        <input type="password"  id="cPassword"  class="input-field"  placeholder="Confirm Password"  required name="cpassword">
                         <label for="pp" style="color: white; font-size: 14px; margin: 10px 0;">Profile picture</label>
                         <input type="file" name="pp" src="" alt="" name="pp">
                         
