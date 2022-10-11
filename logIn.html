@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BroLite Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="menu">
+        <nav>
+            <h1 class="logo">BRO LITE</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><lable><button>Search</button><input type="search" value="search" placeholder="search here"></lable></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+            <div id="login-form" class="login-page">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" onclick="loginBtn()" class="toggle-btn"> Log In</button>
+                        <button type="button" onclick="registerBtn()" class="toggle-btn">Register</button>
+                    </div>
+                    <!--Login form -->
+                    <form id="login" class="input-group-login" onsubmit="login()" method="get" name="loginForm">
+                        <input type="text" id="Login-UserName"class="input-field" placeholder="User Name" required name="username">
+                        <input type="password" class="input-field" placeholder="Password" required name="password">
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log In</button>
+                    </form>
+                    <!--Registration form-->
+                    <form id="register" class="input-group-register" method="get" onsubmit="signUp()" name="signupForm">
+                        <input type="text" id="fName" class="input-field" placeholder="Full Name" required name="fname">
+                        <input type="text" id="lName" class="input-field" placeholder="Email" required name="email">
+                        <input type="text" id="uName" class="input-field" placeholder="User Name" required name="username">
+                        <input type="password" id="Password"class="input-field" placeholder="Enter Password" required name="password">
+                        <input type="password" id="cPassword" class="input-field" placeholder="Confirm Password" required name="cpassword">
+                        <label for="pp" style="color: white; font-size: 14px; margin: 10px 0;">Profile picture</label>
+                        <input type="file" name="pp" src="" alt="" name="pp">
+                        
+
+                        <input type="checkbox"  class="check-box" name="tc"><span>Terms & conditions</span>
+                        <button type="submit" id="submit" class="submit-btn">Continue</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            var x= document.getElementById("login");
+            var y= document.getElementById("register");
+            var z= document.getElementById("btn");
+
+            function registerBtn(){
+                x.style.left='-400px';
+                y.style.left='50px'; 
+                z.style.left='110px';
+            }
+
+            function loginBtn(){
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        <script src="auth.js"></script>
+    </body>
+    </html>

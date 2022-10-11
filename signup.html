@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>BroLite Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="full-page">
+            <nav>
+                <div class="brand">Bro<em>Lite</em></div>
+                <div class="navbar">
+                        <ul id="MenuItems">
+                            <li class="nav-link"><a href="#">About Us</a></li>
+                            <li class="nav-link"><a href="#">Contact</a></li>
+                        </ul>
+                </div>
+            </nav>
+            <div id="login-form" class="login-page">
+                <div class="form-box">
+                    <div class="button-box">
+                        <button type="button" class="toggle-btn" id="title1"> Continue Sign up</button>
+                    </div>
+                    <!--Login form -->
+                    <form id="login" class="input-group-login" onsubmit="signUpCont()" method="get" name="signupFormCont">
+                        <textarea type="text" class="input-field" id="txt-area" placeholder="description" required name="desc"></textarea>
+                        <input type="password" class="input-field" placeholder="Hobbies(comma separated eg. a,b,c,etc" required name="hobbies">
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            var x= document.getElementById("login");
+            var y= document.getElementById("register");
+            var z= document.getElementById("btn");
+
+            function registerBtn(){
+                x.style.left='-400px';
+                y.style.left='50px'; 
+                z.style.left='110px';
+            }
+
+            function loginBtn(){
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        <script src="auth.js"></script>
+    </body>
+    </html>

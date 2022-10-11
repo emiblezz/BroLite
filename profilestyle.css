@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.container {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.check-box{
+    margin:0px;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border:  0;
+    border-radius: 10px;
+    background-color: rgb(92, 118, 233);
+    color: lightgray;
+    margin-right: 5px;
+}
+#profiles{
+    width: 30%;
+    background-color: brown;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgb(92, 118, 233);
+    display: flex;
+    align-items: center;
+}
+
+#p-pic{
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+#data{
+    display: flex;
+    justify-content: space-evenly;
+}
+#details, #statement{
+    padding: 15px;
+    width:80%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+ ol{
+    margin-left: 20px;
+ }
+ #profiles ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ }
+ #profiles li{
+    margin: 1px 0;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    border: 1 lightgray solid;
+    border-radius: 5px;
+    color: white;
+ }
+
+h1, h2, h3{
+    color: white;
+}
+/*footer*/
+footer {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(navajowhite,dodgerblue,aliceblue);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    flex-direction: column;
+    height:auto;
+    margin-top: 100px;
+}
+footer .social_media,
+footer.menu
+{
+    position: relative;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+footer.social_media li{
+    list-style: none;
+}
+footer .social_media li a{
+    font-size:3em;
+    color: white;
+    display: inline-block;
+    margin:0 10px;
+    transition:0.5s;
+}
+footer .social_media li a:hover{
+    transform: translateY(-10px)}
+
+footer p{
+    color: white;
+    text-align:center;
+    font-size:1.1em;
+    margin-top:15px;
+    margin-bottom;
+}
+footer .wave {
+    position:absolute;
+    top:-100px;
+    left:0;
+    width: 100%;
+    height:100px;
+    background:url(wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1{
+    z-index:1000;
+    opacity:1;
+    bottom: 0;
+    animation:animateWave 5s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x:0px;
+    }
+    100%
+    {
+        background-position-x:1000px;
+    }
+}
+footer .wave#wave2{
+    z-index:999;
+    opacity:0.5;
+    bottom: 0px;
+    animation:animateWave_02 5s linear infinite;
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%
+    {
+        background-position-x:0px;
+    }
+}
+footer .wave#wave3{
+    z-index:999;
+    opacity:0.7;
+    bottom: 0px;
+    animation:animateWave_03 5s linear infinite;
+}
+@keyframes animateWave_03
+{
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%
+    {
+        background-position-x:0px;
+    }
+}
+footer .wave#wave4{
+    z-index:999;
+    opacity:0.7;
+    bottom: 0px;
+    animation:animateWave_04 5s linear infinite;
+}
+@keyframes animateWave_04
+{
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%
+    {
+        background-position-x:0px;
+    }
+}
+footer .wave#wave5{
+    z-index:999;
+    opacity:0.5;
+    bottom: 0px;
+    animation:animateWave_05 5s linear infinite;
+}
+@keyframes animateWave_05
+{
+    0%
+    {
+        background-position-x:1000px;
+    }
+    100%
+    {
+        background-position-x:0px;
+    }
+}
